@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hello World Activity</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        padding: 24px;
+        color: #222;
+      }
+      .card {
+        border: 1px solid #d9d9d9;
+        border-radius: 8px;
+        padding: 16px;
+        max-width: 480px;
+      }
+    </style>
+    <script src="/js/postmonger.js"></script>
+  </head>
+  <body>
+    <div class="card">
+      <h3>Hello World Activity</h3>
+      <p>This is a minimal Journey Builder custom activity.</p>
+      <p>Enter a value below and it will be sent to the backend when the activity runs.</p>
+
+      <label for="messageInput">Message</label>
+      <input id="messageInput" name="messageInput" type="text" style="width: 100%; margin-top: 8px; padding: 8px;" placeholder="Type something here" />
+      <button id="sendButton" type="button" style="margin-top: 10px; padding: 8px 12px;">Send to execute</button>
+      <p id="statusText" style="margin-top: 10px; color: #0176d3;"></p>
+    </div>
+
+    <script src="/customActivity.js"></script>
+  </body>
+</html>

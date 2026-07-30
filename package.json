@@ -1,0 +1,13 @@
+{
+  "name": "hello-world-custom-activity",
+  "version": "1.0.0",
+  "description": "Minimal Salesforce Marketing Cloud Journey Builder custom activity server",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "node app.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}

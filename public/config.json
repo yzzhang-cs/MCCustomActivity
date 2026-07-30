@@ -1,0 +1,52 @@
+{
+  "workflowApiVersion": "1.1",
+  "metaData": {
+    "icon": "images/icon.svg",
+    "category": "message"
+  },
+  "type": "REST",
+  "lang": {
+    "en-US": {
+      "name": "Hello World Activity",
+      "description": "A minimal custom activity that returns a greeting."
+    }
+  },
+  "arguments": {
+    "execute": {
+      "inArguments": [
+        { "emailAddress": "{{Contact.Default.Email}}" }
+      ],
+      "outArguments": [
+        { "greeting": "" }
+      ],
+      "url": "https://YOUR_PUBLIC_URL/execute",
+      "timeout": 15000,
+      "retryCount": 1,
+      "retryDelay": 5000
+    }
+  },
+  "configurationArguments": {
+    "save": { "url": "https://YOUR_PUBLIC_URL/save" },
+    "publish": { "url": "https://YOUR_PUBLIC_URL/publish" },
+    "validate": { "url": "https://YOUR_PUBLIC_URL/validate" },
+    "stop": { "url": "https://YOUR_PUBLIC_URL/stop" }
+  },
+  "userInterfaces": {
+    "configModal": {
+      "height": 220,
+      "width": 360
+    }
+  },
+  "schema": {
+    "arguments": {
+      "execute": {
+        "inArguments": [
+          { "emailAddress": { "dataType": "Email", "isNullable": false, "direction": "in" } }
+        ],
+        "outArguments": [
+          { "greeting": { "dataType": "Text", "direction": "out", "access": "visible" } }
+        ]
+      }
+    }
+  }
+}
