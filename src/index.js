@@ -23,10 +23,16 @@ export default {
     if (pathname === '/execute') {
       let body = {};
       try {
-        body = await request.json();
+          body = await request.json();
       } catch {
-        body = {};
+          body = {};
       }
+  
+      console.log({
+          event: 'execute_called',
+          body: body,
+          timestamp: new Date().toISOString()
+      });
 
       const inArgs = body.inArguments || [];
       const firstArg = inArgs[0] || {};
