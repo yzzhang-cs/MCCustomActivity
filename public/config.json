@@ -19,17 +19,17 @@
       "outArguments": [
         { "greeting": "" }
       ],
-      "url": "https://YOUR_PUBLIC_URL/execute",
+      "url": "https://mc-custom-activity-20260730.yzzhangcs.workers.dev/execute",
       "timeout": 15000,
       "retryCount": 1,
       "retryDelay": 5000
     }
   },
   "configurationArguments": {
-    "save": { "url": "https://YOUR_PUBLIC_URL/save" },
-    "publish": { "url": "https://YOUR_PUBLIC_URL/publish" },
-    "validate": { "url": "https://YOUR_PUBLIC_URL/validate" },
-    "stop": { "url": "https://YOUR_PUBLIC_URL/stop" }
+    "save": { "url": "https://mc-custom-activity-20260730.yzzhangcs.workers.dev/save" },
+    "publish": { "url": "https://mc-custom-activity-20260730.yzzhangcs.workers.dev/publish" },
+    "validate": { "url": "https://mc-custom-activity-20260730.yzzhangcs.workers.dev/validate" },
+    "stop": { "url": "https://mc-custom-activity-20260730.yzzhangcs.workers.dev/stop" }
   },
   "userInterfaces": {
     "configModal": {
